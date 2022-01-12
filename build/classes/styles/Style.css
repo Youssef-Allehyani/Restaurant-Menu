@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-Dec-2021, 18:46:16
+    Author     : Youssef Al-lehyani
+*/
+
+.button{
+    -fx-background-color: linear-gradient(#ffffff,#ffffff,#ffffff,#b6b6b6,#bda0a0);
+
+}
+/*.button:hover {
+  -fx-background-color:linear-gradient(#ffd7d4,#fff7f6,#ffffff);
+  -fx-effect: dropshadow( three-pass-box, rgba(255,255,255 , 0.6), 10, 0.0, 0, 1);
+}*/
+.button:pressed {
+    -fx-background-color:linear-gradient(#ffffff,#ffffff,#b6b6b6,#bda0a0);
+  -fx-effect: dropshadow( three-pass-box, rgba(255,255,255 , 0.6), 10, 0.0, 0, 1);
+}
+#Table{
+    -fx-body-color: linear-gradient(#ffffff,#ffffff,#b6b6b6,#bda0a0);
+
+    
+     
+}
+
+#Meals_type{
+    -fx-body-color: linear-gradient(#ffffff,#ffffff,#b6b6b6,#bda0a0);
+}
+/*.Spinner{
+    -fx-body-color: ladder(#444, yellow 0%, red 100%);
+}*/
+/*.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+    -fx-text-fill: white;
+}
+
+.list-cell:odd {
+    -fx-cell-hover-color: #0093ff;
+    
+}
+
+*/
+.list-cell:filled:hover {
+    -fx-background-color: #b6b6b6;
+}
+#dishes .list-cell:filled:selected{
+        -fx-background-color: #b6b6b6;
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="439.0" prefWidth="645.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restaurant_menu_3.HomeController">
+   <children>
+      <ImageView fitHeight="439.0" fitWidth="676.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/home-banner.jpg" />
+         </image>
+      </ImageView>
+      <ListView fx:id="dishes" layoutX="85.0" layoutY="61.0" prefHeight="366.0" prefWidth="200.0" style="-fx-background-color: white;" stylesheets="@../styles/Style.css" />
+      <ComboBox fx:id="Meals_type" layoutX="374.0" layoutY="164.0" onAction="#Meals" prefWidth="150.0" stylesheets="@../styles/Style.css" />
+      <Button fx:id="closeButton" layoutX="360.0" layoutY="213.0" mnemonicParsing="false" onAction="#cancel" prefHeight="36.0" prefWidth="78.0" stylesheets="@../styles/Style.css" text="Cancel">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button cacheShape="false" centerShape="false" focusTraversable="false" layoutX="449.0" layoutY="213.0" mnemonicParsing="false" onAction="#Add" prefHeight="36.0" prefWidth="78.0" scaleShape="false" stylesheets="@../styles/Style.css" text="Add">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect></Button>
+      <Pane fx:id="PricePane" layoutX="285.0" layoutY="63.0" prefHeight="366.0" prefWidth="51.0" />
+      <Spinner fx:id="disheQuantity" layoutX="517.0" layoutY="272.0" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: black;" />
+      <Text fill="WHITE" layoutX="355.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity per dish">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Text>
+      <Pane fx:id="PricePane1" layoutX="32.0" layoutY="61.0" prefHeight="366.0" prefWidth="51.0" />
+      <Text fill="WHITE" layoutX="113.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu" textAlignment="CENTER" wrappingWidth="143.20004882812486">
+         <font>
+            <Font name="Algerian" size="29.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="395.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table Number">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="Table" layoutX="518.0" layoutY="24.0" prefHeight="26.0" prefWidth="64.0" promptText="1" stylesheets="@../styles/Style.css" />
+   </children>
+</AnchorPane>

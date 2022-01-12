@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="restaurant_menu_3.jnlp">
+  <information>
+    <title>restaurant_menu_3</title>
+    <vendor>Youssef Al-lehyani</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\derby.jar" size="2838580" download="eager" />
+    <jar href="lib\derbyclient.jar" size="586237" download="eager" />
+    <jar href="lib\derbynet.jar" size="252393" download="eager" />
+    <jar href="restaurant_menu_3.jar" size="1419144" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="restaurant_menu_3" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="restaurant_menu_3.menu_Restaurant"  name="restaurant_menu_3" />
+  <update check="always"/>
+</jnlp>
